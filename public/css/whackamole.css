@@ -1,0 +1,22 @@
+#wrapper{
+	margin-right: auto;
+	margin-left: auto;
+	width: 600px;
+}
+.empty{
+	float: left;
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+}
+
+h1, h2{
+	text-align: center;
+}
+.btn{
+	color: black;
+}
+
+.mole{
+	background-color: darkgoldenrod;
+}
