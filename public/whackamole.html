@@ -3,8 +3,7 @@
 <head>
 	<title>Whack-a-Mole Game</title>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+	<link rel="stylesheet" href="/bootstrap-3.3.5-dist/css/bootstrap.css">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/whackamole.css">
@@ -12,20 +11,45 @@
 
 </head>
 <body>
-	<h2>Get Ready to</h2>
-	<h1>Whack-A-Mole!</h1>
+	<div id="header"></div>
+	<div id="asides"></div>
+	<div id="clearbackground">
+		Oh no! Krillin has been killed (as usual) D:<br>
+		Collect all of the Dragon Balls<br>
+		and Avoid Clicking Enemies to Win!
+	</div>
 	<div id="wrapper">
-		<button id="whacked" class="btn btn-lrg btn-info btn-block" disabled="disabled">Moles Whacked #  !</button>
-		<div class="empty" id="1"></div>
-		<div class="empty" id="2"></div>
-		<div class="empty" id="3"></div>
-		<div class="empty" id="4"></div>
-		<div class="empty" id="5"></div>
-		<div class="empty" id="6"></div>
-		<div class="empty" id="7"></div>
-		<div class="empty" id="8"></div>
-		<div class="empty" id="9"></div>
-		<button id="start" class="btn btn-lrg btn-info btn-block">Begin!</button>
+		<button id="gathered" class="btn btn-lrg btn-info btn-block" disabled="disabled">Balls Gathered #  !</button>
+		<div class="empty" id="one"><img ></div>
+		<div class="empty" id="two"><img ></div>
+		<div class="empty" id="three"><img ></div>
+		<div class="empty" id="four"><img ></div>
+		<div class="empty" id="five"><img ></div>
+		<div class="empty" id="six"><img ></div>
+		<div class="empty" id="seven"><img ></div>
+		<div class="empty" id="eight"><img ></div>
+		<div class="empty" id="nine"><img ></div>
+		<button id="start" class="btn btn-lrg btn-info btn-block">Save Krillin!</button>
+	</div>
+	<!-- modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close reloadPage" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h2 class="modal-title" id="myModalLabel">KRILLIN LIVES AGAIN!</h2>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="thumbnail">
+	    	</div>
+	      </div>
+	      <div class="modal-footer">
+	      	<h2>(TO DIE ANOTHER DAY)!</h2>
+	        <button type="button" class="btn btn-default reloadPage" data-dismiss="modal">Close</button>
+	        
+	      </div>
+	    </div>
+	  </div>
 	</div>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
